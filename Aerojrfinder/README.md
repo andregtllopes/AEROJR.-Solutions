@@ -18,7 +18,7 @@ The project was consolidated into a robust pipeline divided into five logical st
 The technical differentiator of this project lies in its **Auditability**. The Duplicate Treatment Block generates a real-time log of all conflict resolutions, documenting exactly which record was updated and why (based on chronological priority).
 
 ## 💼 Business Impact
-* **Market Discovery:** The tool was used to facilitate direct contact with alumni via LinkedIn and WhatsApp, allowing for the collection of insights regarding the job market and new industry pain points.
+* **Market Discovery:** The tool was used to facilitate direct contact with alumni via WhatsApp, allowing for the collection of insights regarding the job market and new industry pain points.
 * **Intellectual Capital Management:** Organized years of junior enterprise history, transforming static spreadsheets into a dynamic database for the Marketing department.
 * **Scalability:** The architecture allows new semesters to be added to the pipeline simply by inserting a new CSV into the source folder, keeping the database constantly updated.
 
