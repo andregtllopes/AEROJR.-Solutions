@@ -25,3 +25,42 @@ The technical differentiator of this project lies in its **Auditability**. The D
 ## 🚀 Setup & Reproducibility
 To ensure the code is **Self-Contained** and reproducible by third parties (without exposing the company's original sensitive data), the notebook includes a **Mock Data** generator.
 * Upon running the notebook, the system detects the absence of real data and automatically generates 6 synthetic CSV files with the original AEROJR structure to demonstrate the cleaning and automation features.
+
+## 🛠️ How to Run
+
+Follow these steps to set up the environment and execute the pipeline:
+
+### 1. Prerequisites
+* **Python 3.10+**
+* **Google Chrome** (recommended for `pywhatkit` compatibility)
+* **WhatsApp Web:** Ensure you are logged into your account in the default browser.
+
+### 2. Installation
+Clone the repository and install the required dependencies:
+```bash
+pip install pandas pywhatkit pyautogui
+```
+
+### 3. Execution
+1. Open the `aerojrfinder.ipynb` notebook in VS Code or Jupyter Notebook.
+2. Run **Block 1 (Setup)** to initialize the environment.
+3. Run **Block 2 (ETL)**.
+
+> **Note:** If you don't have the original AEROJR spreadsheets, the script will automatically generate 6 synthetic CSV files (Mock Data) so you can test the logic.
+
+4. Execute the **Modeling** and **Deduplication** blocks to clean the data.
+
+### 4. Running the Automation (WhatsApp Bot)
+To trigger the messages:
+1. Go to the last cell (**Block 5**).
+2. Uncomment the function call: `disparar_pesquisa_pos_junior(membros_finais)`.
+
+> **Important:** Once you run this cell, do not move your mouse or change windows. The script uses `pyautogui` to control the keyboard and browser.
+
+The bot will:
+* Open the browser tabs.
+* Paste the personalized message.
+* Close them automatically after a safe interval.
+
+> [!WARNING]
+> **Automation Safety:** The script includes `time.sleep()` intervals to simulate human behavior and prevent WhatsApp account flags. Use responsibly.
